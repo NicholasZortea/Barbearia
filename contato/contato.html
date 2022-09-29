@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Contato</title>
+        <link rel="stylesheet" href="../produtos/reset.css">
         <link rel="stylesheet" href="contato.css">
     </head>
 <body>
@@ -23,14 +24,39 @@
 
     <main>
         <form action="">
-            <label for="nomeSobrenome">Nome e sobrenome:</label>
-            <input type="text" id="nomeSobrenome">
+            <label for="nomeSobrenome" >Nome e sobrenome:</label>
+            <input type="text" id="nomeSobrenome" class="input-padrao" required>
             
-            <label for="enderecoEmail">Endereço de e-mail</label>
-            <input type="text" id="enderecoEmail">
+            <label for="enderecoEmail" >Endereço de e-mail:</label>
+            <input type="email" id="enderecoEmail" class="input-padrao" required placeholder="seuemail@dominio.com">
 
-            <label for="telefone">Telefone:</label>
-            <input type="text" id="telefone">
+            <label for="telefone" >Telefone:</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+            <label for="Mensagem" >Mensagem:</label>
+            <textarea name="" id="Mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email"> <input type="radio" name="contato" id="radio-email" value="E-mail"> E-mail</label>
+                
+
+                <label for="radio-telefone"> <input type="radio" name="contato" id="radio-telefone" value="Telefone"> Telefone</label>
+                
+
+                <label for="radio-whats"> <input type="radio" name="contato" id="radio-whats" value="Whatsapp" checked> WhatsApp</label>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select name="" id="">
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+            <label><input type="checkbox" class="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
 
             <input type="submit" value="Enviar Formulário">
         </form>
