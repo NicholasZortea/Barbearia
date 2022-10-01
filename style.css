@@ -263,3 +263,27 @@ td, th {
 		width: 100%;
 	}
 }
+
+/*Fim do CSS da página inicial*/
+
+/*Responsivo página produtos*/
+@media screen and (max-width: 480px){
+.produtos, footer {
+	width: auto;
+}
+
+.produtos > li {
+	width: 100%;
+	margin: 1.5% 0;
+}
+
+.media-queria-nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav > ul > li {
+	margin: 0 15px 0 15px;
+}
+}
+/*Fim do Responsivo da página de produtos*/
