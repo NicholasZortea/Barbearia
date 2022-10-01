@@ -246,28 +246,23 @@ td, th {
 	margin: 2em auto;
 }
 
+/*Fim do CSS da página inicial*/
+/*Responsivo */
 @media screen and (max-width: 480px) {
-	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
-		width: auto;
-	}
-
-	h1 {
-		text-align: center;
-	}
-
-	nav {
-		position: static;
-	}
-
-	.imagem-beneficios, .lista-beneficios {
-		width: 100%;
-	}
+.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+	width: auto;
+}
+h1 {
+	text-align: center;
 }
 
-/*Fim do CSS da página inicial*/
+nav {
+	position: static;
+}
 
-/*Responsivo página produtos*/
-@media screen and (max-width: 480px){
+.imagem-beneficios, .lista-beneficios {
+	width: 100%;
+}
 .produtos, footer {
 	width: auto;
 }
@@ -285,5 +280,13 @@ td, th {
 nav > ul > li {
 	margin: 0 15px 0 15px;
 }
+
+form {
+	margin: 0 1.5% 0 1.5%;
 }
-/*Fim do Responsivo da página de produtos*/
+table {
+	margin: 20px 1.5% 40px 1.5%;
+}
+
+}
+/*Fim do Responsivo*/
